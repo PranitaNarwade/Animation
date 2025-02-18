@@ -23,6 +23,14 @@ class MainActivity : AppCompatActivity() {
         val zoom_out =findViewById<Button>(R.id.zoom_out)
         val rotate =findViewById<Button>(R.id.rotate)
 
+
+        val slide_to_right =findViewById<Button>(R.id.slide_to_right)
+        val slide_to_left =findViewById<Button>(R.id.slide_to_left)
+        val slide_from_left=findViewById<Button>(R.id.slide_from_left)
+        val slide_from_right =findViewById<Button>(R.id.slide_from_right)
+        val slide_left =findViewById<Button>(R.id.slide_left)
+        val slide_right =findViewById<Button>(R.id.slide_right)
+
         val text = findViewById<TextView>(R.id.textView)
 
         fade_in.setOnClickListener {
@@ -63,5 +71,31 @@ class MainActivity : AppCompatActivity() {
             val animationRotate = AnimationUtils.loadAnimation(this,R.anim.rotate)
             text.startAnimation(animationRotate)
         }
+        slide_to_left.setOnClickListener {
+            val animationRotate = AnimationUtils.loadAnimation(this,R.anim.slide_to_left)
+            text.startAnimation(animationRotate)
+        }
+        slide_to_right.setOnClickListener {
+            val animationRotate = AnimationUtils.loadAnimation(this,R.anim.slide_to_right)
+            text.startAnimation(animationRotate)
+        }
+        slide_from_left.setOnClickListener {
+            val animationRotate = AnimationUtils.loadAnimation(this,R.anim.slide_from_left)
+            text.startAnimation(animationRotate)
+        }
+        slide_from_right.setOnClickListener {
+            val animationRotate = AnimationUtils.loadAnimation(this,R.anim.slide_from_right)
+            text.startAnimation(animationRotate)
+        }
+        slide_right.setOnClickListener {
+            val animationRotate = AnimationUtils.loadAnimation(this,R.anim.slide_right)
+            text.startAnimation(animationRotate)
+        }
+        slide_left.setOnClickListener {
+            val animationRotate = AnimationUtils.loadAnimation(this,R.anim.slide_left)
+            text.startAnimation(animationRotate)
+        }
+
+
     }
 }
