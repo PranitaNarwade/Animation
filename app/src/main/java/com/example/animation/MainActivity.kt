@@ -23,7 +23,6 @@ class MainActivity : AppCompatActivity() {
         val zoom_out =findViewById<Button>(R.id.zoom_out)
         val rotate =findViewById<Button>(R.id.rotate)
 
-
         val slide_to_right =findViewById<Button>(R.id.slide_to_right)
         val slide_to_left =findViewById<Button>(R.id.slide_to_left)
         val slide_from_left=findViewById<Button>(R.id.slide_from_left)
@@ -95,7 +94,5 @@ class MainActivity : AppCompatActivity() {
             val animationRotate = AnimationUtils.loadAnimation(this,R.anim.slide_left)
             text.startAnimation(animationRotate)
         }
-
-
     }
 }
